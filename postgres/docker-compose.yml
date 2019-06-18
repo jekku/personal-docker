@@ -1,0 +1,12 @@
+# This is a docker manifest intended for running Postgres + PostGIS on Semaphore 2.0
+
+version: '3'
+
+services:
+  postgres:
+    image: mdillon/postgis:10
+    ports:
+      - '5432:5432'
+    network_mode: 'bridge'
+    environment:
+      POSTGRES_PASSWORD: postgres

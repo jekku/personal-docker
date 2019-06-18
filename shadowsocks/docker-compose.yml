@@ -1,0 +1,7 @@
+version: '3' 
+services:
+  shadowsocks:
+    image: wernight/dante
+    network_mode: 'bridge'
+    ports:
+      - '1080:1080'

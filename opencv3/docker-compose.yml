@@ -1,0 +1,7 @@
+# This is a docker manifest intended for running Postgres + PostGIS on Semaphore 2.0
+
+version: '3'
+
+services:
+  opencv3:
+    image: jjanzic/docker-python3-opencv
