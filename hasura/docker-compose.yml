@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  hasura:
+    image: hasura/graphql-engine:latest
+    ports:
+      - '8080:8080'
+    network_mode: 'bridge'
+    environment:
+      HASURA_GRAPHQL_ENABLE_CONSOLE: 'true'
+      HASURA_GRAPHQL_DATABASE_URL: 'postgres://postgres:postgres@host.docker.internal:5432/slerp_dev'
